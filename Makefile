@@ -25,8 +25,6 @@ EXE = $(EXE_PATH)/$(notdir $(shell pwd))
 
 all: $(EXE)
 
-run:
-	$(EXE) $(ARGS)
 #Linker rule
 #Links all .o files into executable
 # $@ is the target of the rule, ie $(EXE)
@@ -51,6 +49,10 @@ $(EXE_PATH): | $(BIN_DIR)
 	mkdir $@
 $(BIN_DIR):
 	mkdir $@
-
+#Not necessary, but nice for removing object and executable files
 clean:
 	rm -r $(OBJ) $(EXE)
+
+#Not necessary, but used in the Atom plugin to build and run
+run:
+	$(EXE) $(ARGS)
