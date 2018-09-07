@@ -22,7 +22,6 @@ int main()
 
     for(long i = 1; i<=50; i+=1)
     {
-        printf("This is change1");
         printf("%li \t %lf \n",i,(factorial(i)-stirling(i))/factorial(i));
     }
 
