@@ -1,3 +1,8 @@
+#Chris Conklin April 2018
+#This makefile will work the same way as codeblocks does
+#In creating executables, so groups working on multiple
+#Editors can produce files in the same format
+
 #Change the right side to "Debug" or "Release" for each mode
 TAR := Debug
 
